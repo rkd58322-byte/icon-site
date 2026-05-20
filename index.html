@@ -347,6 +347,26 @@
       background: linear-gradient(90deg, transparent, var(--gold), transparent);
       height: 1px;
       opacity: 0.4;
+    }/* ==== FEATURE IMAGE section ==== */
+    .feature-image {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background: #000;
+    }
+    .feature-image img {
+      width: 100%;
+      height: auto;
+      max-height: 80vh;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+    @media (max-width: 768px) {
+      .feature-image img {
+        max-height: 60vh;
+      }
     }
 
     /* ==== PROBLEM section ==== */
@@ -1487,7 +1507,12 @@
       </div>
     </div>
   </section>
-
+<!-- ============================================ -->
+  <!-- FEATURE IMAGE · BE THE ICON                  -->
+  <!-- ============================================ -->
+  <section class="feature-image">
+    <img src="be-the-icon.jpg" alt="BE THE ICON" />
+  </section>
   <!-- ============================================ -->
   <!-- APPLY                                         -->
   <!-- ============================================ -->
